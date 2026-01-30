@@ -13,6 +13,8 @@ Tech Used
 How to Run 
 1. Clone the repository
 2. Open "index.html" in any browser
+<br>         OR
+<br> You can simply visit "https://shiikharrr.github.io/Resume/"
 
 Demo
 
