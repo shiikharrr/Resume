@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+}
+
+h1, h2 {
+    margin-bottom: 5px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+
+}
+
+#toggle {
+    display: none;
+}
+
+.toggle-label {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    border: 1px solid #000;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Dark mode styles */
+#toggle:checked ~ .container {
+    background-color: #35322b;
+    color: #f7f5eb;
+}
+
+#toggle:checked ~ .container table,
+#toggle:checked ~ .container th,
+#toggle:checked ~ .container td {
+    border-color: #f7f5eb;
+}
+
+#toggle:checked ~ .toggle-label {
+    background-color: #35322b;
+    color: #f7f5eb;
+    border-color: #f7f5eb;
+}
+
+body:has(#toggle:checked) {
+    background-color: #161616;
+}
